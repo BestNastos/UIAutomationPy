@@ -26,5 +26,7 @@ lib
 lib64
 *.pyo
 *.pyc
+*.html
+*.xml
 
 
