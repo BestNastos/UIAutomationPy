@@ -16,8 +16,11 @@ LoginTest
 
 *** Keywords ***
 loginToApp
+    # find element by xpath
     click link  xpath://a[@class='ico-login']
+    # find element by DOM locator
     input text  id:Email    test
     input text  id:Password     test
+    # find element by css
     click element   css:.button-1.login-button
 
