@@ -7,10 +7,12 @@ ${url}  https://demo.nopcommerce.com/
 
 *** Test Cases ***
 LoginTest
+    # "open browser" is a predefined keyword in ROBOT
     open browser    ${url}  ${browser}
+    # "loginToApp" is not a predefined keyword in ROBOT, so we defined it ourselves below
     loginToApp
+    # "Close browser" is a predefined keyword in ROBOT
     close browser
-
 
 *** Keywords ***
 loginToApp
