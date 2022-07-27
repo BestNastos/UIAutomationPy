@@ -23,7 +23,7 @@ RegTest
     # conditional wait uses the timeout (default 5 sec):
     wait until page contains  Register
     select radio button  Gender  M
-    input text   name:FirstName1  David
+    input text   name:FirstName  David
     input text   name:Email  abc@gmail.com
     input text   name:Password  pass1234
     input text   name:ConfirmPassword  pass1234
