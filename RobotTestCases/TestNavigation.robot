@@ -2,7 +2,19 @@
 Library  SeleniumLibrary
 
 *** Test Cases ***
-Tabs
+Navigation
+    open browser  https://google.com  chrome
+    ${location}=  get location  # captures url of the page
+    log to console  ${location}
+    go to  https://bing.com
+    ${location}=  get location
+    log to console  ${location}
+    go back  # it will go back to google
+    ${location}=  get location
+    log to console  ${location}
+    close browser
+
+SwitchTabs
     open browser  https://demo.automationtesting.in/Windows.html  chrome
     click element  css:.btn.btn-info  # click to open page in another tab
     switch window  title=Selenium
